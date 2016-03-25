@@ -6,11 +6,13 @@ import org.junit.Test;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Base64;
 import java.util.List;
 
+import static javafx.scene.input.DataFormat.URL;
 import static org.junit.Assert.assertEquals;
 
 public class RESTfulTaskTest {
@@ -28,11 +30,9 @@ public class RESTfulTaskTest {
     @Test
     public void testUnauthorizedReadTasks() {
         Response response = requestTo(URI).get();
-        ErrorContainer expected = new ErrorContainer();
 
         assertEquals(403, response.getStatus());
-        //assertEquals("Unauthorized access", response.readEntity(ErrorContainer.class).error);
-        assertEquals(expected, response.readEntity(ErrorContainer.class).error);
+        assertEquals("Unauthorized access", response.readEntity(ErrorContainer.class).error);
 
     }
 
@@ -40,10 +40,8 @@ public class RESTfulTaskTest {
     public void testReadTasks() {
         Response response = authorized(requestTo(URI)).get();
         List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
-        //System.out.println(response.readEntity(String.class));
 
         assertEquals(200, response.getStatus());
-
         Assert.assertTrue(receivedTasks.size() >= 2);
         assertEquals("Buy groceries", receivedTasks.get(0).getTitle());
     }
@@ -58,10 +56,25 @@ public class RESTfulTaskTest {
 
     @Test
     public void testUpdate() {
+        Response response = authorized(requestTo(URI)).get();
+        List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
+        receivedTasks.get(0).setDescription("Buy flowers");
+        requestTo(URI).put(
+                Entity.entity(receivedTasks.get(0).setDescription("Buy flowers"), MediaType.APPLICATION_JSON));
+
+        assertEquals(200, response.getStatus());
+
+        assertEquals("Buy groceries", response.readEntity(TaskContainer.class).getTask().description);
     }
 
     @Test
     public void testDelete() {
+        String id = "51";
+        WebTarget target = client.target(URL + "/" + id);
+        Response response = target.request().delete();
+        if (response.getStatus() != 204) {
+            fail("RESPONSE STATUS" + response.getStatus());
+        }
     }
 
     @Test
@@ -142,7 +155,7 @@ public class RESTfulTaskTest {
     }
 
     static class ErrorContainer {
-        private String error;
+        public String error;
 
         public ErrorContainer(String error) {
             this.error = error;
