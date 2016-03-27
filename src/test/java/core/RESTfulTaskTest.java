@@ -14,6 +14,7 @@ import java.util.List;
 
 import static javafx.scene.input.DataFormat.URL;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class RESTfulTaskTest {
 
@@ -58,20 +59,22 @@ public class RESTfulTaskTest {
     public void testUpdate() {
         Response response = authorized(requestTo(URI)).get();
         List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
-        receivedTasks.get(0).setDescription("Buy flowers");
+        Task task = receivedTasks.get(0);
+        task.setDescription("New");
         requestTo(URI).put(
-                Entity.entity(receivedTasks.get(0).setDescription("Buy flowers"), MediaType.APPLICATION_JSON));
+                Entity.entity(task, MediaType.APPLICATION_JSON));
 
         assertEquals(200, response.getStatus());
 
-        assertEquals("Buy groceries", response.readEntity(TaskContainer.class).getTask().description);
+        assertEquals("New", response.readEntity(TaskContainer.class).getTask().description);
     }
 
     @Test
     public void testDelete() {
-        String id = "51";
-        WebTarget target = client.target(URL + "/" + id);
-        Response response = target.request().delete();
+        Response response = authorized(requestTo(URI)).get();
+        List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
+        receivedTasks.get(0)
+
         if (response.getStatus() != 204) {
             fail("RESPONSE STATUS" + response.getStatus());
         }
