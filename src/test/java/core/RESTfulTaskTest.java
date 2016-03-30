@@ -6,13 +6,11 @@ import org.junit.Test;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
-import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Base64;
 import java.util.List;
 
-import static javafx.scene.input.DataFormat.URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -65,15 +63,12 @@ public class RESTfulTaskTest {
                 Entity.entity(task, MediaType.APPLICATION_JSON));
 
         assertEquals(200, response.getStatus());
-
         assertEquals("New", response.readEntity(TaskContainer.class).getTask().description);
     }
 
     @Test
     public void testDelete() {
-        Response response = authorized(requestTo(URI)).get();
-        List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
-        receivedTasks.get(0)
+        Response response = authorized(requestTo(URI + "/1")).delete();
 
         if (response.getStatus() != 204) {
             fail("RESPONSE STATUS" + response.getStatus());
@@ -82,6 +77,24 @@ public class RESTfulTaskTest {
 
     @Test
     public void testCreateUpdateDelete() {
+        Response response = requestTo(URI).post(Entity.entity(new Task("additional task"), MediaType.APPLICATION_JSON));
+
+        assertEquals("additional task", response.readEntity(TaskContainer.class).getTask().getTitle());
+        response = authorized(requestTo(URI)).get();
+        List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
+        Task task = receivedTasks.get(0);
+        task.setDescription("additional task2");
+        requestTo(URI).put(
+                Entity.entity(task, MediaType.APPLICATION_JSON));
+
+        assertEquals(200, response.getStatus());
+        assertEquals("additional task2", response.readEntity(TaskContainer.class).getTask().description);
+
+        response = authorized(requestTo(URI + "/1")).delete();
+
+        if (response.getStatus() != 204) {
+            fail("RESPONSE STATUS" + response.getStatus());
+        }
     }
 
     static class TaskContainer {
