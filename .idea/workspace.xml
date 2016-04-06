@@ -29,11 +29,14 @@
       <file leaf-file-name="RESTfulTaskTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/core/RESTfulTaskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1455">
-              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+            <state relative-caret-position="1185">
+              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+                <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+                <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+                <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
                 <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
                 <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
               </folding>
@@ -137,7 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,10 +148,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APITest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,7 +214,33 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/exercism/java/nucleotide-count" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RESTfulTaskTest.testDelete">
+    <configuration default="false" name="RESTfulTaskTest.testCreateUpdateDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="APITest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="core" />
+      <option name="MAIN_CLASS_NAME" value="core.RESTfulTaskTest" />
+      <option name="METHOD_NAME" value="testCreateUpdateDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="RESTfulTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -188,7 +267,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RESTfulTaskTest.testUnauthorizedRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RESTfulTaskTest.testReadTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="core.*" />
@@ -200,7 +279,59 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="core" />
       <option name="MAIN_CLASS_NAME" value="core.RESTfulTaskTest" />
-      <option name="METHOD_NAME" value="testUnauthorizedRead" />
+      <option name="METHOD_NAME" value="testReadTasks" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RESTfulTaskTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="APITest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="core" />
+      <option name="MAIN_CLASS_NAME" value="core.RESTfulTaskTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RESTfulTaskTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="APITest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="core" />
+      <option name="MAIN_CLASS_NAME" value="core.RESTfulTaskTest" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -271,6 +402,36 @@
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -461,14 +622,20 @@
       <setting name="rowsRange" value="" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testUnauthorizedRead" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testCreateUpdateDelete" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testReadTasks" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testCreate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testDelete" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testUnauthorizedRead" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testDelete" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testCreateUpdateDelete" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testCreate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RESTfulTaskTest.testReadTasks" />
       </list>
     </recent_temporary>
   </component>
@@ -489,35 +656,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RESTfulTaskTest - 2016.03.24 at 21h 55m 09s.xml">
+    <history-entry file="RESTfulTaskTest - 2016.04.06 at 18h 07m 36s.xml">
       <configuration name="RESTfulTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfulTaskTest - 2016.03.24 at 21h 56m 15s.xml">
+    <history-entry file="RESTfulTaskTest - 2016.04.06 at 18h 50m 05s.xml">
       <configuration name="RESTfulTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfulTaskTest - 2016.03.24 at 21h 56m 53s.xml">
-      <configuration name="RESTfulTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testCreate - 2016.04.06 at 18h 19m 45s.xml">
+      <configuration name="RESTfulTaskTest.testCreate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.22 at 21h 43m 47s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testCreate - 2016.04.06 at 18h 52m 32s.xml">
+      <configuration name="RESTfulTaskTest.testCreate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.22 at 21h 44m 19s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testCreateUpdateDelete - 2016.04.06 at 18h 03m 44s.xml">
+      <configuration name="RESTfulTaskTest.testCreateUpdateDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.22 at 21h 45m 30s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testCreateUpdateDelete - 2016.04.06 at 18h 04m 30s.xml">
+      <configuration name="RESTfulTaskTest.testCreateUpdateDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.24 at 21h 42m 33s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testCreateUpdateDelete - 2016.04.06 at 18h 57m 27s.xml">
+      <configuration name="RESTfulTaskTest.testCreateUpdateDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.24 at 21h 49m 55s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testDelete - 2016.04.06 at 18h 58m 22s.xml">
+      <configuration name="RESTfulTaskTest.testDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest - 2016.03.24 at 21h 50m 19s.xml">
-      <configuration name="RESTfullTaskTest" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testReadTasks - 2016.04.06 at 18h 19m 01s.xml">
+      <configuration name="RESTfulTaskTest.testReadTasks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RESTfullTaskTest_testUnauthorizedRead - 2016.03.22 at 21h 49m 44s.xml">
-      <configuration name="RESTfullTaskTest.testUnauthorizedRead" configurationId="JUnit" />
+    <history-entry file="RESTfulTaskTest_testUpdate - 2016.04.06 at 18h 07m 18s.xml">
+      <configuration name="RESTfulTaskTest.testUpdate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -526,11 +693,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42996743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -539,15 +708,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25081432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -579,6 +746,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
           </folding>
@@ -592,6 +762,25 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/core/RESTfulTaskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
           </folding>
@@ -612,6 +801,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
           </folding>
@@ -649,11 +841,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/core/RESTfulTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="1185">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#TaskContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#TasksContainer#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#Task#0;class#RESTfulTaskTest#0" expanded="false" />
+            <element signature="class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#ErrorContainer#1;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
             <element signature="method#equals#0;class#ErrorContainer#0;class#RESTfulTaskTest#0" expanded="false" />
           </folding>

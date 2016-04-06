@@ -1,6 +1,5 @@
 package core;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import javax.ws.rs.client.ClientBuilder;
@@ -32,7 +31,6 @@ public class RESTfulTaskTest {
 
         assertEquals(403, response.getStatus());
         assertEquals("Unauthorized access", response.readEntity(ErrorContainer.class).error);
-
     }
 
     @Test
@@ -41,13 +39,13 @@ public class RESTfulTaskTest {
         List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
 
         assertEquals(200, response.getStatus());
-        Assert.assertTrue(receivedTasks.size() >= 2);
+        assertEquals(2, receivedTasks.size());
         assertEquals("Buy groceries", receivedTasks.get(0).getTitle());
     }
 
     @Test
     public void testCreate() {
-        Response response = requestTo(URI).post(Entity.entity(new Task("give lesson"), MediaType.APPLICATION_JSON));
+        Response response = authorized(requestTo(URI)).post(Entity.entity(new Task("give lesson"), MediaType.APPLICATION_JSON));
 
         assertEquals(201, response.getStatus());
         assertEquals("give lesson", response.readEntity(TaskContainer.class).getTask().getTitle());
@@ -63,7 +61,7 @@ public class RESTfulTaskTest {
                 Entity.entity(task, MediaType.APPLICATION_JSON));
 
         assertEquals(200, response.getStatus());
-        assertEquals("New", response.readEntity(TaskContainer.class).getTask().description);
+        assertEquals("New", receivedTasks.get(0).description);
     }
 
     @Test
@@ -77,9 +75,10 @@ public class RESTfulTaskTest {
 
     @Test
     public void testCreateUpdateDelete() {
-        Response response = requestTo(URI).post(Entity.entity(new Task("additional task"), MediaType.APPLICATION_JSON));
+        Response response = authorized(requestTo(URI)).post(Entity.entity(new Task("additional task"), MediaType.APPLICATION_JSON));
 
         assertEquals("additional task", response.readEntity(TaskContainer.class).getTask().getTitle());
+
         response = authorized(requestTo(URI)).get();
         List<Task> receivedTasks = response.readEntity(TasksContainer.class).getTasks();
         Task task = receivedTasks.get(0);
@@ -88,7 +87,7 @@ public class RESTfulTaskTest {
                 Entity.entity(task, MediaType.APPLICATION_JSON));
 
         assertEquals(200, response.getStatus());
-        assertEquals("additional task2", response.readEntity(TaskContainer.class).getTask().description);
+        assertEquals("additional task2", receivedTasks.get(0).description);
 
         response = authorized(requestTo(URI + "/1")).delete();
 
